@@ -9,3 +9,4 @@ public class oopsuc3 {
         System.out.println(String.join(" ", "   *****   ", "    *****   ", " **        ", "  ******  "));
     }
 } 
+
