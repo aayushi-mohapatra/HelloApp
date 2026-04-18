@@ -1,15 +1,13 @@
 public class HelloApp {
     public static void main(String[] args) {
-        // Get the name from command-line argument
-        String name = args[0];
-        // Default name
-        String name = "World";
+        String names;
 
-        // Check if a name is provided as a command-line argument
         if (args.length > 0) {
-            name = args[0]; // Use the provided name
+            names = String.join(", ", args);
+        } else {
+            names = "World";
         }
 
-        System.out.println("Hello, " + name + "!");
+        System.out.println("Hello, " + names + "!");
     }
 }
